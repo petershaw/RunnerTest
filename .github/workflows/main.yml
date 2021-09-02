@@ -12,5 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Brew-Nats
-      run: brew install nats-server -DVV 
+      run: brew install nats-server
+    - name: Run-Nats
+      run: nats-server -DVV 
 
