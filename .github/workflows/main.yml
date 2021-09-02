@@ -14,5 +14,5 @@ jobs:
     - name: Brew-Nats
       run: brew install nats-server
     - name: Run-Nats
-      run: nats-server -DVV 
+      run: nats-server -DVV &
 
