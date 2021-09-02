@@ -1,0 +1,15 @@
+name: macos
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: BrewDocker
+      run: brew install docker
