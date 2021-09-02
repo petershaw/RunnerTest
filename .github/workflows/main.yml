@@ -11,5 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: BrewDocker
-      run: brew install docker
+    - name: Brew-Nats
+      run: brew install nats-server -DVV 
+
